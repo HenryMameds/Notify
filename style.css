@@ -67,12 +67,16 @@ body{
     background-color: #ffffff;
     margin-top: 50px;
     margin-bottom: 50px;
+    margin-right: 140px;
+    margin-left: 140px;
+    justify-content: center;
 }
 
 .section-one-div {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 30px;
 }
 
 .circle-section-one {
@@ -167,12 +171,79 @@ body{
 
 .section-tree {
     grid-area: section-tree;
-    /* background-color: orange; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 140px;
+    margin-left: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
 }
+
+.section-tree p {
+    color: #888888;
+    width: 700px;
+    margin-bottom: 0px;
+
+}
+
+.section-tree h4 {
+    margin-top: 0px;
+}
+
+.section-tree h3 {
+    margin-top: 50px;
+}
+
+.circle-section-tree {
+    background-color: #d3d3d3;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin-right: 20px;
+}
+
+.circle-section-tree img {
+    width: 20px;
+    height: 20px;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.circle-section-tree:hover{
+    background-color: #2dcc70;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
 
 /* Rodape da Pagina */
 
-footer{
+
+footer {
     grid-area: footer;
-    /* background-color: yellow; */
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #e3e3e3;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    text-decoration:none; 
+    color: #919191;
+    margin-right: 40px;
 }
