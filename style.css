@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-areas: 'header header header header'
+                         'section-one section-one section-one section-one'
+                         'section-two section-two section-two section-two'
+                         'section-tree section-tree section-tree section-tree'
+                         'footer footer footer footer';
+    grid-template-rows: 82vh 50vh 30vh 10vh 10vh;
+    grid-template-columns: 32vw 32vw 32vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    grid-area: header;
+    border-top: solid 10px #2dcc70;
+    background-image: url('img/banner.png');
+    background-size: 100% 100%;
+}
+
+.banner h1 {
+    color: #fffffd;
+    font-family: 'Pacifico', cursive;
+    font-size: 40pt;
+}
+
+.banner p{
+    color: #f9ffff;
+}
+
+.circle {
+    background-color: black;
+    opacity: 0.5;
+    border: none;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    position: relative;
+    float:left;
+    margin-right: 20px;
+}
+
+.circle:hover {
+    opacity: 1;
+    background-color: #2dcc70;
+}
+
+.circle img {
+    width: 26px;
+    height: 26px;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.circle-section-one {
+    background-color: #2dcc70;
+    border: none;
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+    position: relative;
+    margin-right: 20px;
+    display: flex;
+}
+
+.circle-section-one img {
+    width: 48px;
+    height: 48px;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.section-one {
+    grid-area: section-one;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.section-two {
+    grid-area: section-two;
+    /* background-color: black; */
+}
+
+.section-tree {
+    grid-area: section-tree;
+    /* background-color: orange; */
+}
+
+footer{
+    grid-area: footer;
+    /* background-color: yellow; */
+}
