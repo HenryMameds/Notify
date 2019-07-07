@@ -102,7 +102,64 @@ body{
 
 .section-two {
     grid-area: section-two;
+    display: flex;
+    height: 300px;
+    text-align: left;
+    background-color: 	#E3E3E3;
+    align-items: center;
+    padding-top: 80px;
+    
+
     /* background-color: black; */
+}
+.section-two h3{
+    font-size: 1.17em;
+    margin-left: 125px;
+}
+.section-two p{
+    margin-left: 125px;
+    font-size: 11pt;
+    line-height: 1.5;
+    color: grey;
+    margin-top: 0px;
+    width:452px;
+    margin-top: 0px;
+    
+    
+}
+.campo{
+    font-size: 10pt;
+    line-height: 18px;
+    font-weight: 300;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border-radius: 15px 0px 0px 15px;
+    border: 2px solid white;
+    font-family: inherit;
+    
+    margin-left: 125px;
+}
+.botao{
+    font-size: 13pt;
+    padding: 9px 12px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 2px solid#2dcc70;
+    background-color: #2dcc70;
+    color: #f9ffff;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    font-family: inherit;
+    
+}
+
+.video{
+    margin-left: 400px;
+   justify-content: flex-end;
+    display: flex;
+    
 }
 
 
