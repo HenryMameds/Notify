@@ -232,6 +232,9 @@ body {
     color: #888888;
     width: 700px;
     margin-bottom: 0px;
+}
+
+.p-italico {
     font-style:italic;
 }
 
