@@ -11,6 +11,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+
 /* Barra de navegação */
 
 .navbar{
@@ -18,6 +19,7 @@ body{
     background-color: #2dcc70;
     height: 10px;
 }
+
 
 /* Cabeçalho da Pagina */
 
@@ -36,8 +38,9 @@ body{
     justify-content: center;
     justify-items: center;
     flex-direction: column;
-    margin-bottom: 70px;
-    margin-right: 10px;
+    position: relative;
+    bottom: 40px;
+    right: 10px;
 }
 
 .banner h1 {
@@ -88,6 +91,7 @@ body{
     top: 95px;
 }
 
+
 /* Primeira Section da Pagina */
 
 .section-one {
@@ -117,7 +121,6 @@ body{
     width: 96px;
     height: 96px;
     position: relative;
-    margin-right: 20px;
 }
 
 .circle-section-one img {
@@ -134,45 +137,38 @@ body{
     color: #b1b1b1;
 }
 
+
 /* Segunda Section da Pagina */
 
 .section-two {
     grid-area: section-two;
     display: flex;
-    height: 400px;
-    text-align: left;
     background-color: 	#E3E3E3;
     align-items: center;
-    padding-top: 0px;
-    
-
-    /* background-color: black; */
+    justify-content: center;
+    height: 329px;
 }
-.tbi{
-    padding-bottom: 140px;
+
+.tbi {
     display: flex;
     flex-direction: column;
-    width:400;
-    height:290;
-    
-    
+    position: relative;
+    bottom: 40px;
 }
-.section-two h3{
+
+.section-two h3 {
     font-size: 1.17em;
-    margin-left: 125px;
 }
-.section-two p{
-    margin-left: 125px;
+
+.section-two p {
     font-size: 10pt;
     line-height: 1.75;
     color: grey;
     margin-top: 0px;
     width:452px;
-    margin-top: 0px;
-    
-    
 }
-.campo{
+
+.campo {
     font-size: 10pt;
     line-height: 18px;
     font-weight: 300;
@@ -180,14 +176,12 @@ body{
     box-sizing: border-box;
     border-radius: 12px 0px 0px 12px;
     border: 2px solid white;
-    font-family: inherit;
-    margin-left: 125px;
     width: 250px;
     margin-right: -5px;
-    
 }
-.botao{
-    padding: 11px 12px;
+
+.botao {
+    padding: 11.2px 12px;
     box-sizing: border-box;
     border-radius: 12px;
     border-top-left-radius: 0;
@@ -195,18 +189,21 @@ body{
     border: 2px solid#2dcc70;
     background-color: #2dcc70;
     color: #f9ffff;
-    font-family: 'Pacifico', cursive;
     font-weight: bold;
     font-family: inherit;
     width: 90px;
 }
 
-.video{
-    margin-left: 300px;
-   justify-content: center;
+.video {
+    justify-content: center;
     display: flex;
-    
-    
+    width: 600px;
+    height: 300px;
+    align-items: center;
+}
+
+.video iframe {
+    border-radius: 12px;
 }
 
 
@@ -230,7 +227,6 @@ body{
     width: 700px;
     margin-bottom: 0px;
     font-style:italic;
-
 }
 
 .section-tree h4 {
