@@ -237,6 +237,24 @@ body{
     margin-top: 50px;
 }
 
+.imagens-section {
+    display: flex;
+}
+
+.imagens-section div {
+    height: 50px;
+    width: 50px;
+    margin-right: 4px;
+}
+
+.imagens-section div:hover {
+    background-color: #2dcc70;
+}
+
+.imagens-section img:hover {
+    opacity: 0.7;
+}
+
 .circle-section-tree {
     background-color: #d3d3d3;
     border: none;
