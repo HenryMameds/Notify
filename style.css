@@ -260,6 +260,19 @@ body {
 .imagens-section-tree img:hover {
     opacity: 0.2;
 }
+.degrade{
+	width: 100%;
+	height: 180px;
+	-webkit-mask-image: linear-gradient(to left, white, transparent);
+    background-image: url(img/pessoa1.jpg);
+}
+.degrade2 {
+	width: 100%;
+	height: 180px;
+	-webkit-mask-image: linear-gradient(to right, white, transparent);
+    background-image: url(img/pessoa1.jpg);
+}
+
 
 .circle-section-tree {
     background-color: #d3d3d3;
