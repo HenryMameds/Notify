@@ -1,8 +1,8 @@
-html,body{
+html,body {
     height: 100%;
-  }
+}
 
-body{
+body {
     margin: 0;
     display: grid;
     grid-template-areas: 'nav nav nav nav'
@@ -18,7 +18,7 @@ body{
 
 /* Barra de navegação */
 
-.navbar{
+.navbar {
     grid-area: nav;
     background-color: #2dcc70;
     height: 10px;
@@ -58,7 +58,7 @@ body{
     color: #2dcc70;
 }
 
-.banner p{
+.banner p {
     color: #f9ffff;
     font-size: 14pt;
     font-weight: bold;
@@ -143,6 +143,7 @@ body{
 }
 
 
+
 /* Segunda Section da Pagina */
 
 .section-two {
@@ -159,6 +160,7 @@ body{
     flex-direction: column;
     position: relative;
     bottom: 40px;
+    left: 40px;
 }
 
 .section-two h3 {
@@ -211,7 +213,6 @@ body{
     border-radius: 12px;
 }
 
-
 /* Terceira Section da Pagina */
 
 .section-tree {
@@ -242,21 +243,21 @@ body{
     margin-top: 50px;
 }
 
-.imagens-section {
+.imagens-section-tree {
     display: flex;
 }
 
-.imagens-section div {
+.imagens-section-tree div {
     height: 50px;
     width: 50px;
     margin-right: 4px;
 }
 
-.imagens-section div:hover {
+.imagens-section-tree div:hover {
     background-color: #3cb669;
 }
 
-.imagens-section img:hover {
+.imagens-section-tree img:hover {
     opacity: 0.2;
 }
 
@@ -279,7 +280,7 @@ body{
     top: 0; left: 0; bottom: 0; right: 0;
 }
 
-.circle-section-tree:hover{
+.circle-section-tree:hover {
     background-color: #2dcc70;
 }
 
@@ -292,7 +293,6 @@ body{
 
 /* Rodape da Pagina */
 
-
 footer {
     grid-area: footer;
     padding-top: 40px;
@@ -302,7 +302,7 @@ footer {
     align-items: center;
     justify-content: center;
 }
-.footer-links{
+.footer-links {
     display: flex;
     justify-content: center;
 }
@@ -312,81 +312,100 @@ footer a {
     color: #919191;
     margin-right: 40px;
 }
-@media (max-width: 768px){
-    body{
-        margin: 0;
-        display: grid;
-        grid-template-areas: 
-                             'section-two section-two section-two section-two'
-                             'section-tree section-tree section-tree section-tree'
-                             'footer footer footer footer';
-        grid-template-rows: 50vh 30vh 30vh;
+
+
+/* Configuração mobile*/
+
+@media (max-width: 767px){
+    html, body {
+        height: auto;
     }
+
+
+    /* Cabeçalho da Pagina */
     
-    .tbi{
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        bottom: 20px;
-        justify-content: center;
+    .banner {
+        height: auto;
     }
-    .tbi p, h3{
-        width: 50%;
-        display: flex;
-        position: relative; left: 20px;
+
+    .header-div-one {
         align-items: center;
+        position: inherit;
+        bottom: 0px;
+        right: 0px;
     }
+
+    .circle {
+        margin-bottom: 10px;
+    }
+
+    .hand {
+        display: none
+    }
+
+
+    /* Primeira Section da Pagina */
+
+    .section-one {
+        flex-direction: column;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .section-one div {
+            margin-right: 0px
+    }
+
+
+    /* Segunda Section da Pagina */
+
     .section-two {
-        display: table-column;
         flex-direction: column;
-        height: 550px;
+        height: auto;
     }
-    .video{
-        justify-content: center;
-        position: absolute;
-        width:100% ;
-    }
-    .section-tree{
-        display: table-column;
-        flex-direction: column;
-        height: 550px;
-        
-    }
-    .section-tree p{
-        width: 50%;
-        display: flex;
-        position: relative; right: 50px;
-        
-    }
-    .section-tree h3, h4{
-        width: 50%;
-        display: flex;
+
+    .tbi {
         align-items: center;
-       
+        position: inherit;
     }
 
-    .imagens-section{
-        justify-content: flex-end;
-        position: relative; right: 165px;
-        width:100% ;
+    .section-two p {
+        width: 308px;
+    }
+
+    .video {
+        width: 395px;
+    }
+
+    iframe {
+        width: 360px; 
+    }
+
+
+    /* Terceira Section da Pagina */
+
+    .section-tree {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .section-tree p {
+        width: auto;
+    }
+
+    .imagens-section-tree {
         flex-wrap: wrap;
-        width: 100%;
-        
     }
-    .circle-section-tree{
-        justify-content: flex-end;
-        position: relative; right: 135px;
-        flex-wrap: wrap;
-        
 
-    }
-    footer{
-        margin-top: 150px;
 
-    }
+    /* Rodape da Pagina */
+
     .footer-links {
-        
         flex-direction: column;
-        width: 70%;
+        align-items: center;
+    }
+
+    footer a {
+        margin-right: auto;
     }
 }
