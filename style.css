@@ -315,4 +315,82 @@ footer a {
 
 @media (max-width: 768px){
 
+@media (max-width: 768px){
+    body{
+        margin: 0;
+        display: grid;
+        grid-template-areas: 
+                             'section-two section-two section-two section-two'
+                             'section-tree section-tree section-tree section-tree'
+                             'footer footer footer footer';
+        grid-template-areas: 
+        grid-template-rows: 50vh 30vh 30vh;
+    }
+    
+    .tbi{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        bottom: 20px;
+        justify-content: center;
+    }
+    .tbi p, h3{
+        width: 50%;
+        display: flex;
+        position: relative; left: 20px;
+        align-items: center;
+    }
+    .section-two {
+        display: table-column;
+        flex-direction: column;
+        height: 550px;
+    }
+    .video{
+        justify-content: center;
+        position: absolute;
+        width:100% ;
+    }
+    .section-tree{
+        display: table-column;
+        flex-direction: column;
+        height: 550px;
+        
+    }
+    .section-tree p{
+        width: 50%;
+        display: flex;
+        position: relative; right: 50px;
+        
+    }
+    .section-tree h3, h4{
+        width: 50%;
+        display: flex;
+        align-items: center;
+       
+    }
+
+    .imagens-section{
+        justify-content: flex-end;
+        position: relative; right: 165px;
+        width:100% ;
+        flex-wrap: wrap;
+        width: 100%;
+        
+    }
+    .circle-section-tree{
+        justify-content: flex-end;
+        position: relative; right: 135px;
+        flex-wrap: wrap;
+        
+
+    }
+    footer{
+        margin-top: 150px;
+
+    }
+    .footer-links {
+        
+        flex-direction: column;
+        width: 70%;
+    }
 }
