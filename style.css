@@ -312,9 +312,6 @@ footer a {
     color: #919191;
     margin-right: 40px;
 }
-
-@media (max-width: 768px){
-
 @media (max-width: 768px){
     body{
         margin: 0;
@@ -323,7 +320,6 @@ footer a {
                              'section-two section-two section-two section-two'
                              'section-tree section-tree section-tree section-tree'
                              'footer footer footer footer';
-        grid-template-areas: 
         grid-template-rows: 50vh 30vh 30vh;
     }
     
